@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: springboot-kubernetes-postgresql-storage
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost:5432}/${POSTGRES_DB:pikecape}
+    username: ${POSTGRES_USER:postgres}
+    password: ${POSTGRES_PASSWORD:postgres}
+    driver-class-name: org.postgresql.Driver
+  flyway:
+    enabled: true
+    validate-on-migrate: false

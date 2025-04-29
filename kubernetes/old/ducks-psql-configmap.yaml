@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ducks-psql-configmap
+data:
+  hostname: "postgres"
+  database: "pikecape"
